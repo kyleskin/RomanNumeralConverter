@@ -33,6 +33,8 @@ public class RomanNumeralConvertUnitTests
     [InlineData("X", 10)]
     [InlineData("L", 50)]
     [InlineData("C", 100)]
+    [InlineData("D", 500)]
+    [InlineData("M", 1000)]
     public void Convert_SingleNumeral(string romanNumeral, int expectedResult)
     {  
         // Act
@@ -46,6 +48,7 @@ public class RomanNumeralConvertUnitTests
     [InlineData("II", 2)]
     [InlineData("XX", 20)]
     [InlineData("CC", 200)]
+    [InlineData("MM", 2000)]
     public void Convert_DoubleNumeral(string romanNumeral, int expectedResult)
     {  
         // Act
